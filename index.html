@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт-пустышка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>Мой сайт</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Добро пожаловать на мой сайт!</h2>
+                <p>Это простой сайт-пустышка, созданный для демонстрации.</p>
+                <button class="cta-button" onclick="showAlert()">Нажми меня!</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>О нас</h2>
+                <p>Мы создаем простые и красивые веб-сайты. Этот сайт является примером базовой структуры с современным дизайном.</p>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Адаптивный дизайн</h3>
+                        <p>Сайт отлично выглядит на всех устройствах</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Современные технологии</h3>
+                        <p>Используем HTML5, CSS3 и JavaScript</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Быстрая загрузка</h3>
+                        <p>Оптимизированный код для быстрой работы</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Наши услуги</h2>
+                <div class="services-grid">
+                    <div class="service">
+                        <h3>Веб-разработка</h3>
+                        <p>Создание современных веб-сайтов и приложений</p>
+                    </div>
+                    <div class="service">
+                        <h3>Дизайн</h3>
+                        <p>Разработка уникального дизайна для вашего проекта</p>
+                    </div>
+                    <div class="service">
+                        <h3>SEO оптимизация</h3>
+                        <p>Повышение видимости в поисковых системах</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Свяжитесь с нами</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Мой сайт. Все права защищены.</p>
+            <p id="currentTime"></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
